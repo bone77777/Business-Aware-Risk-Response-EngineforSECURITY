@@ -1,5 +1,6 @@
 # Business-Aware Risk Response Engine for SECURITY
 
+今回作らせてもらったのは、セキュリティキャンプようのコードです。
 セキュリティインシデント発生時に、**ビジネスコンテキストを考慮した最適な対応アクション**を自動選択するSOC（Security Operations Center）意思決定支援エンジンです。
 
 ---
@@ -87,11 +88,6 @@ if asset.get("is_closing_period"):
 
 ## 使い方
 
-### 必要環境
-
-- Python 3.8 以上
-- 標準ライブラリのみ（追加インストール不要）
-
 ### 実行
 
 ```bash
@@ -139,9 +135,3 @@ soc.multi_objective_optimization(
 - [ ] 時系列でのビジネスコンテキスト自動切替（営業時間外・休日対応）
 - [ ] SIEMログとの連携による脅威確率の自動推定
 - [ ] Webダッシュボードでの可視化
-
----
-
-## ライセンス
-
-MIT License
